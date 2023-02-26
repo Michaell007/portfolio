@@ -14,10 +14,12 @@
 
 /* variables */
 :root {
-    --bg-color: #c29637;
-    --bg-second-color: #323946;
-    --text-color: #fff;
-    --main-color: #0ef;
+    --bg-color: #f1e8e6;
+    --bg-second-color: #537FE7;
+    --text-color: #000;
+    --main-color: #f55951;
+    --btn-color: #fff;
+    --header-second: #fff;
 }
 
 html {
@@ -97,7 +99,9 @@ span {
 }
 
 .home-img img {
-    width: 35vw;
+    width: 25vw;
+    border-radius: 50%;
+    border-style: inset;
 }
 
 .home-content p {
@@ -131,13 +135,14 @@ span {
     font-size: 1.6rem;
     letter-spacing: .1rem;
     font-weight: 600;
+    color: var(--btn-color);
 }
 
 .btn:hover {
     box-shadow: none;
 }
 
-.about {
+.competence {
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -169,6 +174,10 @@ span {
     margin: 2rem 0 3rem;
 }
 
+.heading-second {
+    color: var(--header-second);
+}
+
 .services h2 {
     margin-bottom: 5rem;
 }
@@ -182,9 +191,8 @@ span {
 } 
 
 .services-container .services-box {
-    flex: 1 1 30rem;
-    background: var(--bg-second-color);
-    padding: 3rem 2rem 4rem;
+    flex: 1 1 25rem;
+    /* background: var(--bg-second-color); */
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--bg-color);
@@ -196,7 +204,7 @@ span {
 }
 
 .services-box i {
-    font-size: 7rem;
+    font-size: 4rem;
     color: var(--main-color);
     transform: scale(1.02);
 }
@@ -210,12 +218,24 @@ span {
     margin: 1rem 0 3rem;
 }
 
+.services-box img {
+    height: 200px;
+}
+
 .portfolio {
     background: var(--bg-second-color);
 }
 
 .portfolio h2 {
     margin-bottom: 4rem;
+}
+
+.portfolio-container p {
+    color: var(--header-second);
+}
+
+.portfolio-container h4 {
+    color: var(--header-second);
 }
 
 .portfolio-container { 
@@ -275,12 +295,19 @@ span {
     margin: .7rem 0;
 }
 
+.contact {
+    /* width: 49%; */
+    background: var(--bg-second-color);
+}
+
 .contact form .input-box input {
     width: 49%;
+    background: var(--bg-color);
 }
 
 .contact form textarea {
     resize: none;
+    background: var(--bg-color);
 }
 
 .contact form .btn {
